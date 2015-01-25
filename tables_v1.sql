@@ -68,7 +68,7 @@ BUDGETENTRYID integer primary key
 , BUDGETYEARID integer
 , CATEGID integer
 , SUBCATEGID integer
-, PERIOD TEXT NOT NULL
+, PERIOD TEXT NOT NULL /* None, Weekly, Bi-Weekly, Monthly, Monthly, Bi-Monthly, Quarterly, Half-Yearly, Yearly, Daily*/
 , AMOUNT numeric NOT NULL
 );
 CREATE INDEX IDX_BUDGETTABLE_BUDGETYEARID ON BUDGETTABLE_V1(BUDGETYEARID);
