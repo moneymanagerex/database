@@ -2,9 +2,9 @@
 CREATE TABLE ACCOUNTLIST_V1(
 ACCOUNTID integer primary key
 , ACCOUNTNAME TEXT COLLATE NOCASE NOT NULL UNIQUE
-, ACCOUNTTYPE TEXT NOT NULL -- Checking, Term, Investment, Credit Card
+, ACCOUNTTYPE TEXT NOT NULL /* Checking, Term, Investment, Credit Card */
 , ACCOUNTNUM TEXT
-, STATUS TEXT NOT NULL -- Open, Closed
+, STATUS TEXT NOT NULL /* Open, Closed */
 , NOTES TEXT 
 , HELDAT TEXT 
 , WEBSITE TEXT 
@@ -22,10 +22,10 @@ ASSETID integer primary key
 , STARTDATE TEXT NOT NULL 
 , ASSETNAME TEXT COLLATE NOCASE NOT NULL
 , VALUE numeric
-, VALUECHANGE TEXT -- None, Appreciates, Depreciates
+, VALUECHANGE TEXT /* None, Appreciates, Depreciates */
 , NOTES TEXT
 , VALUECHANGERATE numeric
-, ASSETTYPE TEXT -- Property, Automobile, Household Object, Art, Jewellery, Cash, Other
+, ASSETTYPE TEXT /* Property, Automobile, Household Object, Art, Jewellery, Cash, Other */
 );
 CREATE INDEX IDX_ASSETS_ASSETTYPE ON ASSETS_V1(ASSETTYPE);
 
@@ -36,9 +36,9 @@ BDID integer primary key
 , ACCOUNTID integer NOT NULL
 , TOACCOUNTID integer
 , PAYEEID integer NOT NULL
-, TRANSCODE TEXT NOT NULL -- Withdrawal, Deposit, Transfer
+, TRANSCODE TEXT NOT NULL /* Withdrawal, Deposit, Transfer */
 , TRANSAMOUNT numeric NOT NULL
-, STATUS TEXT -- None, Reconciled, Void, Follow up, Duplicate
+, STATUS TEXT /* None, Reconciled, Void, Follow up, Duplicate */
 , TRANSACTIONNUMBER TEXT
 , NOTES TEXT
 , CATEGID integer
@@ -110,9 +110,9 @@ TRANSID integer primary key
 , ACCOUNTID integer NOT NULL
 , TOACCOUNTID integer
 , PAYEEID integer NOT NULL
-, TRANSCODE TEXT NOT NULL -- Withdrawal, Deposit, Transfer
+, TRANSCODE TEXT NOT NULL /* Withdrawal, Deposit, Transfer */
 , TRANSAMOUNT numeric NOT NULL
-, STATUS TEXT -- None, Reconciled, Void, Follow up, Duplicate
+, STATUS TEXT /* None, Reconciled, Void, Follow up, Duplicate */
 , TRANSACTIONNUMBER TEXT
 , NOTES TEXT
 , CATEGID integer
@@ -427,14 +427,14 @@ CREATE INDEX INDEX_REPORT_NAME ON REPORT_V1(REPORTNAME);
 -- Describe ATTACHMENT_V1
 CREATE TABLE ATTACHMENT_V1 (
 ATTACHMENTID INTEGER NOT NULL PRIMARY KEY
-, REFTYPE TEXT NOT NULL -- Transaction, Stock, Asset, BankAccount, RepeatingTransaction, Payee
+, REFTYPE TEXT NOT NULL /* Transaction, Stock, Asset, BankAccount, RepeatingTransaction, Payee */
 , REFID INTEGER NOT NULL
 , DESCRIPTION TEXT COLLATE NOCASE
 , FILENAME TEXT NOT NULL COLLATE NOCASE
 );
 CREATE INDEX IDX_ATTACHMENT_REF ON ATTACHMENT_V1 (REFTYPE, REFID);
  
- -- Describe USAGE_V1
+-- Describe USAGE_V1
 CREATE TABLE USAGE_V1 (
 USAGEID INTEGER NOT NULL PRIMARY KEY
 , USAGEDATE TEXT NOT NULL 
