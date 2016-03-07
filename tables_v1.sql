@@ -220,7 +220,7 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(67,'Indonesian rupiah','Rp','','.',' ','',
 INSERT INTO CURRENCYFORMATS_V1 VALUES(68,'Special Drawing Rights','SDR','','.',' ','','',100,1,'XDR');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(69,'Iranian rial','','','.',' ','','',1,1,'IRR');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(70,'Iraqi dinar','','','.',' ','','',1,1,'IQD');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(71,'Israeli new sheqel','','','.',' ','','',100,1,'ILS');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(71,'Israeli new shekel','₪','','.',' ','','',100,1,'ILS');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(72,'Jamaican dollar','J$','','.',' ','','',100,1,'JMD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(73,'Japanese yen','¥','','.',' ','','',1,1,'JPY');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(74,'Jordanian dinar','','','.',' ','','',100,1,'JOD');
