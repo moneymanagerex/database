@@ -1,4 +1,4 @@
--- Describe ACCOUNTLIST_V1
+﻿-- Describe ACCOUNTLIST_V1
 CREATE TABLE ACCOUNTLIST_V1(
 ACCOUNTID integer primary key
 , ACCOUNTNAME TEXT COLLATE NOCASE NOT NULL UNIQUE
@@ -226,11 +226,11 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(73,'Japanese yen','¥','','.',' ','','',1,
 INSERT INTO CURRENCYFORMATS_V1 VALUES(74,'Jordanian dinar','','','.',' ','','',100,1,'JOD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(75,'Kazakhstani tenge','T','','.',' ','','',100,1,'KZT');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(76,'Kenyan shilling','KSh','','.',' ','','',100,1,'KES');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(77,'North Korean won','W','','.',' ','','',100,1,'KPW');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(78,'South Korean won','W','','.',' ','','',1,1,'KRW');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(77,'North Korean won','₩','','.',' ','','',100,1,'KPW');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(78,'South Korean won','₩','','.',' ','','',1,1,'KRW');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(79,'Kuwaiti dinar','','','.',' ','','',100,1,'KWD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(80,'Kyrgyzstani som','','','.',' ','','',100,1,'KGS');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(81,'Lao kip','KN','','.',' ','','',100,1,'LAK');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(81,'Lao kip','₭','','.',' ','','',100,1,'LAK');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(82,'Latvian lats','Ls','','.',' ','','',100,1,'LVL');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(83,'Lebanese lira','','','.',' ','','',1,1,'LBP');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(84,'Lesotho loti','M','','.',' ','','',100,1,'LSL');
@@ -264,11 +264,11 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(111,'Papua New Guinean kina','K','','.',' 
 INSERT INTO CURRENCYFORMATS_V1 VALUES(112,'Paraguayan guarani','','','.',' ','','',1,1,'PYG');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(113,'Peruvian nuevo sol','S/.','','.',' ','','',100,1,'PEN');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(114,'Philippine peso','₱','','.',' ','','',100,1,'PHP');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(115,'Polish zloty','','','.',' ','','',100,1,'PLN');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(115,'Polish zloty','zł','','.',' ','','',100,1,'PLN');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(116,'Qatari riyal','QR','','.',' ','','',100,1,'QAR');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(117,'Romanian leu','L','','.',' ','','',100,1,'RON');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(118,'Rwandan franc','RF','','.',' ','','',1,1,'RWF');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(119,'São Tomé and Príncipe dobra','Db','','.',' ','','',100,1,'STD');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(119,'Sao Tome and Principe dobra','Db','','.',' ','','',100,1,'STD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(120,'Saudi riyal','SR','','.',' ','','',100,1,'SAR');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(121,'Serbian dinar','din.','','.',' ','','',1,1,'RSD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(122,'Seychellois rupee','SR','','.',' ','','',100,1,'SCR');
@@ -284,7 +284,7 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(131,'Surinamese dollar','$','','.',' ','',
 INSERT INTO CURRENCYFORMATS_V1 VALUES(132,'Swazi lilangeni','E','','.',' ','','',100,1,'SZL');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(133,'Swedish krona','kr','','.',' ','','',100,1,'SEK');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(134,'Swiss franc','Fr.','','.',' ','','',100,1,'CHF');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(135,'Syrian pound','','','.',' ','','',1,1,'SYP');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(135,'Syrian pound','£S','','.',' ','','',1,1,'SYP');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(136,'New Taiwan dollar','NT$','','.',' ','','',100,1,'TWD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(137,'Tajikistani somoni','','','.',' ','','',100,1,'TJS');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(138,'Tanzanian shilling','','','.',' ','','',1,1,'TZS');
@@ -301,7 +301,7 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(148,'Vanuatu vatu','VT','','.',' ','','',1
 INSERT INTO CURRENCYFORMATS_V1 VALUES(149,'Vietnamese dong','₫','','.',' ','','',1,1,'VND');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(150,'Samoan tala','WS$','','.',' ','','',100,1,'WST');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(151,'Yemeni rial','','','.',' ','','',1,1,'YER');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(152,'Venezuelan Bolívar','Bs.','','.',',','bolívar','céntimos',100,1,'VEF');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(152,'Venezuelan Bolivar','Bs.','','.',',','bolívar','céntimos',100,1,'VEF');
 
 -- Describe INFOTABLE_V1
 CREATE TABLE INFOTABLE_V1(
