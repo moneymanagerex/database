@@ -153,12 +153,12 @@ CREATE INDEX IDX_CURRENCYFORMATS_SYMBOL ON CURRENCYFORMATS_V1(CURRENCY_SYMBOL);
 INSERT INTO CURRENCYFORMATS_V1 VALUES(1,'United States dollar','$','','.',' ','','',100,1,'USD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(2,'European euro','€','','.',' ','','',100,1,'EUR');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(3,'UK Pound','£','','.',' ','Pound','Pence',100,1,'GBP');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(4,'Russian Ruble','','р',',',' ','руб.','коп.',100,1,'RUB');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(4,'Russian Ruble','','р',',',' ','rub.','k.',100,1,'RUB');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(5,'Ukrainian hryvnia','₴','',',',' ','','',100,1,'UAH');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(6,'Afghan afghani','؋','','.',' ','','pul',100,1,'AFN');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(7,'Albanian lek','','L','.',' ','','',1,1,'ALL');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(8,'Algerian dinar','دج','','.',' ','','',100,1,'DZD');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(9,'Angolan kwanza','','Kz','.',' ','','Céntimo',100,1,'AOA');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(9,'Angolan kwanza','','Kz','.',' ','','Centimo',100,1,'AOA');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(10,'East Caribbean dollar','EC$','','.',' ','','',100,1,'XCD');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(11,'Argentine peso','AR$','',',','.','','centavo',100,1,'ARS');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(12,'Armenian dram','','','.',' ','','',1,1,'AMD');
@@ -301,7 +301,7 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(148,'Vanuatu vatu','VT','','.',' ','','',1
 INSERT INTO CURRENCYFORMATS_V1 VALUES(149,'Vietnamese dong','₫','','.',' ','','',1,1,'VND');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(150,'Samoan tala','WS$','','.',' ','','',100,1,'WST');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(151,'Yemeni rial','','','.',' ','','',1,1,'YER');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(152,'Venezuelan Bolivar','Bs.','','.',',','bolívar','céntimos',100,1,'VEF');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(152,'Venezuelan Bolivar','Bs.','','.',',','bolivar','centimos',100,1,'VEF');
 
 -- Describe INFOTABLE_V1
 CREATE TABLE INFOTABLE_V1(
