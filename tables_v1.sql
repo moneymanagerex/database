@@ -277,7 +277,7 @@ INSERT INTO CURRENCYFORMATS_V1 VALUES(111,'_tr_Papua New Guinean kina','K','','.
 INSERT INTO CURRENCYFORMATS_V1 VALUES(112,'_tr_Paraguayan guarani','','','.',' ','','',1,1,'PYG');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(113,'_tr_Peruvian nuevo sol','S/.','','.',' ','','',100,1,'PEN');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(114,'_tr_Philippine peso','₱','','.',' ','','',100,1,'PHP');
-INSERT INTO CURRENCYFORMATS_V1 VALUES(115,'_tr_Polish zloty','','','.',' ','','',100,1,'PLN');
+INSERT INTO CURRENCYFORMATS_V1 VALUES(115,'_tr_Polish zloty','','zł',',','.','złoty','grosz',100,1,'PLN');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(116,'_tr_Qatari riyal','QR','','.',' ','','',100,1,'QAR');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(117,'_tr_Romanian leu','L','','.',' ','','',100,1,'RON');
 INSERT INTO CURRENCYFORMATS_V1 VALUES(118,'_tr_Rwandan franc','RF','','.',' ','','',1,1,'RWF');
