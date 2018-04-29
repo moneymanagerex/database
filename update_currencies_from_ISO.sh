@@ -22,7 +22,7 @@ while read_xml; do
   C="${C//\'/}"
   case $E in
     HstrcCcyNtry | /HstrcCcyTbl ) unset sym nam ;;
-    CcyNm* ) nam="$C" ;;
+    CcyNm ) nam="$C" ;;
     Ccy ) sym="$C" ;;
     WthdrwlDt ) dat="$C" ;;
     /HstrcCcyNtry )
@@ -47,7 +47,7 @@ while read_xml; do
   C="${C//\'/}"
   case $E in
     CcyNtry | /CcyTbl ) unset sym nam dig ;;
-    CcyNm* ) nam="$C" ;;
+    CcyNm ) nam="$C" ;;
     Ccy ) sym="$C" ;;
     CcyMnrUnts ) dig="$C" ;;
     /CcyNtry )
