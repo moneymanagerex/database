@@ -1,0 +1,4 @@
+-- MMEX Debug SQL - Read --
+select 'You must not have used currencies with the same symbol.';
+select 'You must update accounts listed below to use only one selected currency with given symbol:';
+select ACCOUNTNAME, ACCOUNTTYPE, STATUS, c2.CURRENCYNAME, c2.CURRENCY_SYMBOL from ACCOUNTLIST_V1 a inner join CURRENCYFORMATS_V1 c2 on a.CURRENCYID = c2.CURRENCYID where a.CURRENCYID in (select c.CURRENCYID from CURRENCYFORMATS_V1 c inner join (select CURRENCY_SYMBOL, COUNT(*) from CURRENCYFORMATS_V1 where CURRENCYID in (select distinct CURRENCYID from ACCOUNTLIST_V1 where CURRENCYID is not null and CURRENCYID <> '') group by CURRENCY_SYMBOL having COUNT(*) > 1) s on c.CURRENCY_SYMBOL = s.CURRENCY_SYMBOL where CURRENCYID in (select distinct CURRENCYID from ACCOUNTLIST_V1 where CURRENCYID is not null and CURRENCYID <> '')) order by c2.CURRENCY_SYMBOL, ACCOUNTNAME;
