@@ -1,0 +1,2 @@
+-- MMEX Debug SQL - Update --
+delete from CURRENCYHISTORY_V1 where CURRENCYID not in (select distinct CURRENCYID from ACCOUNTLIST_V1 where CURRENCYID is not null and CURRENCYID <> '');
