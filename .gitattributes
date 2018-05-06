@@ -4,5 +4,6 @@
 * text=auto
 
 # Declare files that will always have LF line endings on checkout.
-*.sql  text eol=lf
-*.sh   text eol=lf
+*.sql   text eol=lf
+*.sh    text eol=lf
+*.mmdbg text eol=lf
