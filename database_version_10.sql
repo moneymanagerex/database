@@ -26,6 +26,21 @@ CURRENCYID
 , 0
 FROM CURRENCYFORMATS_V1;
 
+UPDATE CURRENCYFORMATS_V1_NEW SET HISTORIC = 1
+WHERE CURRENCY_SYMBOL IN (
+  'BYR', 'LVL', 'LTL', 'MRO', 'STD', 'ADP', 'AFA', 'ALK', 'AOK', 'AON', 'AOR',
+  'ARA', 'ARP', 'ARY', 'ATS', 'AYM', 'AZM', 'BAD', 'BEC', 'BEF', 'BEL', 'BGJ',
+  'BGK', 'BGL', 'BOP', 'BRB', 'BRC', 'BRE', 'BRN', 'BRR', 'BUK', 'BYB', 'CHC',
+  'CSD', 'CSJ', 'CSK', 'CYP', 'DDM', 'DEM', 'ECS', 'ECV', 'EEK', 'ESA', 'ESB',
+  'ESP', 'FIM', 'FRF', 'GEK', 'GHC', 'GHP', 'GNE', 'GNS', 'GQE', 'GRD', 'GWE',
+  'GWP', 'HRD', 'IEP', 'ILP', 'ILR', 'ISJ', 'ITL', 'LAJ', 'LSM', 'LTT', 'LUC',
+  'LUF', 'LUL', 'LVR', 'MGF', 'MLF', 'MTL', 'MTP', 'MVQ', 'MXP', 'MZE', 'MZM',
+  'NIC', 'NLG', 'PEH', 'PEI', 'PES', 'PLZ', 'PTE', 'RHD', 'ROK', 'ROL', 'RUR',
+  'SDD', 'SDP', 'SIT', 'SKK', 'SRG', 'SUR', 'TJR', 'TMM', 'TPE', 'TRL', 'UAK',
+  'UGS', 'UGW', 'USS', 'UYN', 'UYP', 'VEB', 'VNC', 'XEU', 'XFO', 'YDD', 'YUD',
+  'YUM', 'YUN', 'ZAL', 'ZMK', 'ZRN', 'ZRZ', 'ZWC', 'ZWD', 'ZWN', 'ZWR'
+);
+
 DROP INDEX IDX_CURRENCYFORMATS_SYMBOL;
 DROP TABLE CURRENCYFORMATS_V1;
 ALTER TABLE CURRENCYFORMATS_V1_NEW RENAME TO CURRENCYFORMATS_V1;
