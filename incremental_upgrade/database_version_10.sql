@@ -8,7 +8,7 @@ CURRENCYID integer primary key
 , SCALE integer
 , BASECONVRATE numeric
 , CURRENCY_SYMBOL TEXT COLLATE NOCASE NOT NULL UNIQUE
-, CURRENCY_TYPE TEXT /* Traditional, Crypto */
+, CURRENCY_TYPE TEXT /* Fiat, Crypto */
 , HISTORIC integer DEFAULT 0 /* 1 if no longer official */
 );
 

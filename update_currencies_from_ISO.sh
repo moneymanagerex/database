@@ -62,10 +62,10 @@ done < <( wget -qO - $URL )
 # update
 for cur in "${!cur_nam[@]}"; do
   if [[ ${cur_his[$cur]} == 1 ]]; then
-    sed -i -E "/,1,'$cur','Traditional',[01]\);$/{s/( VALUES\([0-9]+,)'[^']+',(.*,[0-9]+(,[^,]+){3}),[01]\)/\1'_tr_${cur_nam[$cur]}',\2,1)/;h}; \${x;/./{x;q0};x;q1}" "$FILE" \
+    sed -i -E "/,1,'$cur','Fiat',[01]\);$/{s/( VALUES\([0-9]+,)'[^']+',(.*,[0-9]+(,[^,]+){3}),[01]\)/\1'_tr_${cur_nam[$cur]}',\2,1)/;h}; \${x;/./{x;q0};x;q1}" "$FILE" \
       && unset cur_nam[$cur] cur_his[$cur]
   else
-    sed -i -E "/,1,'$cur','Traditional',[01]\);$/{s/( VALUES\([0-9]+,)'[^']+',(.*),[0-9]+((,[^,]+){3}),[01]\)/\1'_tr_${cur_nam[$cur]}',\2,$((10**${cur_dig[$cur]}))\3,0)/;h}; \${x;/./{x;q0};x;q1}" "$FILE" \
+    sed -i -E "/,1,'$cur','Fiat',[01]\);$/{s/( VALUES\([0-9]+,)'[^']+',(.*),[0-9]+((,[^,]+){3}),[01]\)/\1'_tr_${cur_nam[$cur]}',\2,$((10**${cur_dig[$cur]}))\3,0)/;h}; \${x;/./{x;q0};x;q1}" "$FILE" \
       && unset cur_nam[$cur] cur_dig[$cur] cur_his[$cur]
   fi
 done
@@ -75,10 +75,10 @@ IFS=$'\n' sorted=($(sort <<<"${!cur_nam[*]}"))
 # add missing
 for cur in ${sorted[*]}; do
   if [[ ${cur_his[$cur]} == 1 ]]; then
-    sed -i "/INSERT INTO CURRENCYFORMATS VALUES($max_id,/a INSERT INTO CURRENCYFORMATS VALUES($((++max_id)),'_tr_${cur_nam[$cur]}','','','.',',',100,1,'$cur','Traditional',1);" "$FILE" \
+    sed -i "/INSERT INTO CURRENCYFORMATS VALUES($max_id,/a INSERT INTO CURRENCYFORMATS VALUES($((++max_id)),'_tr_${cur_nam[$cur]}','','','.',',',100,1,'$cur','Fiat',1);" "$FILE" \
       && unset cur_nam[$cur] cur_his[$cur]
   else
-    sed -i "/INSERT INTO CURRENCYFORMATS VALUES($max_id,/a INSERT INTO CURRENCYFORMATS VALUES($((++max_id)),'_tr_${cur_nam[$cur]}','','','.',',',$((10**${cur_dig[$cur]})),1,'$cur','Traditional',0);" "$FILE" \
+    sed -i "/INSERT INTO CURRENCYFORMATS VALUES($max_id,/a INSERT INTO CURRENCYFORMATS VALUES($((++max_id)),'_tr_${cur_nam[$cur]}','','','.',',',$((10**${cur_dig[$cur]})),1,'$cur','Fiat',0);" "$FILE" \
       && unset cur_nam[$cur] cur_dig[$cur] cur_his[$cur]
   fi
 done
