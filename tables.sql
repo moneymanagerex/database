@@ -275,7 +275,7 @@ INSERT INTO CURRENCYFORMATS VALUES(110,'_tr_Balboa','B./','','.',' ',100,'PAB','
 INSERT INTO CURRENCYFORMATS VALUES(111,'_tr_Kina','K','','.',' ',100,'PGK','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(112,'_tr_Guarani','','','.',' ',1,'PYG','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(113,'_tr_Sol','S/.','','.',' ',100,'PEN','Fiat',0);
-INSERT INTO CURRENCYFORMATS VALUES(114,'_tr_Philippine Piso','₱','','.',' ',100,'PHP','Fiat',0);
+INSERT INTO CURRENCYFORMATS VALUES(114,'_tr_Philippine Peso','₱','','.',' ',100,'PHP','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(115,'_tr_Zloty','','zł',',','.',100,'PLN','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(116,'_tr_Qatari Rial','QR','','.',' ',100,'QAR','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(117,'_tr_Romanian Leu','L','','.',' ',100,'RON','Fiat',0);
@@ -313,7 +313,7 @@ INSERT INTO CURRENCYFORMATS VALUES(148,'_tr_Vatu','VT','','.',' ',1,'VUV','Fiat'
 INSERT INTO CURRENCYFORMATS VALUES(149,'_tr_Dong','₫','','.',' ',1,'VND','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(150,'_tr_Tala','WS$','','.',' ',100,'WST','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(151,'_tr_Yemeni Rial','','','.',' ',100,'YER','Fiat',0);
-INSERT INTO CURRENCYFORMATS VALUES(152,'_tr_Bolívar','Bs.','','.',',',100,'VEF','Fiat',0);
+INSERT INTO CURRENCYFORMATS VALUES(152,'_tr_Bolívar (before 2018-08)','Bs.','','.',',',100,'VEF','Fiat',1);
 INSERT INTO CURRENCYFORMATS VALUES(153,'_tr_Bitcoin','Ƀ','','.',',',100000000,'BTC','Crypto',0);
 INSERT INTO CURRENCYFORMATS VALUES(154,'_tr_Andorran Peseta (before 2003-07)','','','.',',',100,'ADP','Fiat',1);
 INSERT INTO CURRENCYFORMATS VALUES(155,'_tr_Afghani (before 2003-01)','','','.',',',100,'AFA','Fiat',1);
@@ -441,6 +441,7 @@ INSERT INTO CURRENCYFORMATS VALUES(276,'_tr_Zimbabwe Dollar (before 2008-08)',''
 INSERT INTO CURRENCYFORMATS VALUES(277,'_tr_Zimbabwe Dollar','','','.',',',100,'ZWL','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(278,'_tr_Zimbabwe Dollar (new) (before 2006-09)','','','.',',',100,'ZWN','Fiat',1);
 INSERT INTO CURRENCYFORMATS VALUES(279,'_tr_Zimbabwe Dollar (before 2009-06)','','','.',',',100,'ZWR','Fiat',1);
+INSERT INTO CURRENCYFORMATS VALUES(280,'_tr_Bolívar Soberano','','','.',',',100,'VES','Fiat',0);
 
 -- Describe INFOTABLE
 CREATE TABLE INFOTABLE(
