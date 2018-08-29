@@ -1,0 +1,9 @@
+-- rename table names used in GRM definitions not renamed in buggy v11 to v12 script
+
+UPDATE REPORT SET SQLCONTENT = REPLACE(SQLCONTENT, '_v1', '' ) WHERE SQLCONTENT LIKE '%_v1%';
+UPDATE REPORT SET LUACONTENT = REPLACE(LUACONTENT, '_v1', '' ) WHERE LUACONTENT LIKE '%_v1%';
+UPDATE REPORT SET TEMPLATECONTENT = REPLACE(TEMPLATECONTENT, '_v1', '' ) WHERE TEMPLATECONTENT LIKE '%_v1%';
+
+-- finish
+
+PRAGMA user_version = 14;
