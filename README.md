@@ -1,11 +1,21 @@
 database
 ========
 
-### Schema
+## Schema
 
-### UML
+Available in [tables.sql](tables.sql) file.
 
-### Initialization
+## UML
+
+![ER diagram](tables.png)
+
+Relations not implemented at SQL level:
+
+* CUSTOMFIELDDATA.REFID (depends on CUSTOMFIELD.REFTYPE)
+* ATTACHMENT.REFID (depends on ATTACHMENT.REFTYPE)
+* TRANSLINK.LINKRECORDID (depends on TRANSLINK.LINKTYPE)
+
+## Initialization
 
 |CATEGID | SUBCATEGID | name
 |:------:|:----------:|--------------
