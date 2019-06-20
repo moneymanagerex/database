@@ -443,6 +443,7 @@ INSERT INTO CURRENCYFORMATS VALUES(277,'_tr_Zimbabwe Dollar','','','.',',',100,'
 INSERT INTO CURRENCYFORMATS VALUES(278,'_tr_Zimbabwe Dollar (new) (before 2006-09)','','','.',',',100,'ZWN','Fiat',1);
 INSERT INTO CURRENCYFORMATS VALUES(279,'_tr_Zimbabwe Dollar (before 2009-06)','','','.',',',100,'ZWR','Fiat',1);
 INSERT INTO CURRENCYFORMATS VALUES(280,'_tr_Bolívar Soberano','','','.',',',100,'VES','Fiat',0);
+INSERT INTO CURRENCYFORMATS VALUES(281,'_tr_Unidad Previsional','','','.',',',10000,'UYW','Fiat',0);
 
 -- Describe INFOTABLE
 CREATE TABLE INFOTABLE(
