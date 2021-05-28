@@ -166,7 +166,7 @@ CREATE INDEX IDX_CURRENCYFORMATS_SYMBOL ON CURRENCYFORMATS(CURRENCY_SYMBOL);
 INSERT INTO CURRENCYFORMATS VALUES(1,'_tr_US Dollar','$','','.',' ',100,'USD','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(2,'_tr_Euro','€','','.',' ',100,'EUR','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(3,'_tr_Pound Sterling','£','','.',' ',100,'GBP','Fiat',0);
-INSERT INTO CURRENCYFORMATS VALUES(4,'_tr_Russian Ruble','','р',',',' ',100,'RUB','Fiat',0);
+INSERT INTO CURRENCYFORMATS VALUES(4,'_tr_Russian Ruble','','₽',',',' ',100,'RUB','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(5,'_tr_Hryvnia','₴','',',',' ',100,'UAH','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(6,'_tr_Afghani','؋','','.',' ',100,'AFN','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(7,'_tr_Lek','','L','.',' ',100,'ALL','Fiat',0);
@@ -296,7 +296,7 @@ INSERT INTO CURRENCYFORMATS VALUES(130,'_tr_Sudanese Pound','','','.',' ',100,'S
 INSERT INTO CURRENCYFORMATS VALUES(131,'_tr_Surinam Dollar','$','','.',' ',100,'SRD','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(132,'_tr_Lilangeni','E','','.',' ',100,'SZL','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(133,'_tr_Swedish Krona','kr','','.',' ',100,'SEK','Fiat',0);
-INSERT INTO CURRENCYFORMATS VALUES(134,'_tr_Swiss Franc','Fr.','','.',' ',100,'CHF','Fiat',0);
+INSERT INTO CURRENCYFORMATS VALUES(134,'_tr_Swiss Franc','₣','','.',' ',100,'CHF','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(135,'_tr_Syrian Pound','','','.',' ',100,'SYP','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(136,'_tr_New Taiwan Dollar','NT$','','.',' ',100,'TWD','Fiat',0);
 INSERT INTO CURRENCYFORMATS VALUES(137,'_tr_Somoni','','','.',' ',100,'TJS','Fiat',0);
