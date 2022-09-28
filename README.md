@@ -7,6 +7,8 @@ Available in [tables.sql](tables.sql) file.
 
 ## UML
 
+**NOTE: THIS DIAGRAM IS OUT-OF-DATE AND NEEDS UPDATING TO REFLECT THE LATEST V15 DATABASE**
+
 ![ER diagram](tables.png)
 
 Relations not implemented at SQL level:
