@@ -1,3 +1,8 @@
+-- DB Tidy, redundant views
+DROP VIEW IF EXISTS alldata;
+DROP VIEW IF EXISTS alldatax;
+DROP VIEW IF EXISTS budget;
+
 -- Nested Categories
 -- https://github.com/moneymanagerex/moneymanagerex/issues/1477
 ALTER TABLE CATEGORY_V1 RENAME TO CATEGORY_V1_OLD;
@@ -38,8 +43,3 @@ ALTER TABLE SPLITTRANSACTIONS_V1 DROP COLUMN SUBCATEGID;
 -- DB Tidy, redundant tables
 DROP TABLE IF EXISTS ASSETCLASS_V1;
 DROP TABLE IF EXISTS ASSETCLASS_STOCK_V1;
-
--- DB Tidy, redundant views
-DROP VIEW IF EXISTS alldata;
-DROP VIEW IF EXISTS alldatax;
-DROP VIEW IF EXISTS budget;
