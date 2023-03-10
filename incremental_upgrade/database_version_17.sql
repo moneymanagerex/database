@@ -1,10 +1,10 @@
+-- db tidy, fix corrupt indices
+REINDEX;
+
 -- DB Tidy, redundant views
 DROP VIEW IF EXISTS alldata;
 DROP VIEW IF EXISTS alldatax;
 DROP VIEW IF EXISTS budget;
-
--- DB Tidy, fix corrupt indices
-REINDEX;
 
 -- Nested Categories
 -- https://github.com/moneymanagerex/moneymanagerex/issues/1477

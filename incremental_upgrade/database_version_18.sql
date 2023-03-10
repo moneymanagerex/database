@@ -1,3 +1,6 @@
+-- db tidy, fix corrupt indices
+REINDEX;
+
 -- db tidy -- remove blank records caused by https://github.com/moneymanagerex/moneymanagerex/issues/5630
 DELETE FROM CHECKINGACCOUNT_V1 WHERE ACCOUNTID = '-1';
 
