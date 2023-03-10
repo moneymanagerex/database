@@ -1,3 +1,5 @@
+-- db tidy, fix corrupt indices
+REINDEX;
 
 -- Will fail if v8-14 by recreating a column that exists in those versions
 -- so only upgrade from v1-v7 possible. Need to downgrade other versions prior to upgrade 
