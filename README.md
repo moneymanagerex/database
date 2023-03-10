@@ -5,11 +5,11 @@ database
 
 Available in [tables.sql](tables.sql) file.
 
-## UML
+## UML (as of v18)
 
-**NOTE: THIS DIAGRAM IS OUT-OF-DATE AND NEEDS UPDATING TO REFLECT THE LATEST V15 DATABASE**
+**Click the image below for an interactive diagram**
 
-![ER diagram](tables.png)
+[![ER diagram](tables.png)](https://dbdiagram.io/d/640ba8f4296d97641d871522)
 
 Relations not implemented at SQL level:
 
