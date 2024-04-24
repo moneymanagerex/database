@@ -5,7 +5,7 @@ database
 
 Available in [tables.sql](tables.sql) file.
 
-## UML (as of v18)
+## UML (as of v19)
 
 **Click the image below for an interactive diagram**
 
@@ -16,6 +16,7 @@ Relations not implemented at SQL level:
 * CUSTOMFIELDDATA.REFID (depends on CUSTOMFIELD.REFTYPE)
 * ATTACHMENT.REFID (depends on ATTACHMENT.REFTYPE)
 * TRANSLINK.LINKRECORDID (depends on TRANSLINK.LINKTYPE)
+* TAGLINK.REFID (depends on TAGLINK.REFTYPE)
 
 ## Initialization
 
