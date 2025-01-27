@@ -1,5 +1,5 @@
 -- db tidy, fix corrupt indices
 REINDEX;
 
--- nothing to do, just incrementing version to cater of SUID index size changes to int64,
--- see: https://github.com/moneymanagerex/moneymanagerex/issues/7136
+-- To alleviate future issues we are normalizing the TRANSDATE column
+UPDATE CHECKINGACCOUNT_V1 SET TRANSDATE = CONCAT(TRANSDATE, 'T00:00:00') WHERE LENGTH(TRANSDATE)=10;
