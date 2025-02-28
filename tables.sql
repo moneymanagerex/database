@@ -2,7 +2,7 @@
 CREATE TABLE ACCOUNTLIST_V1(
 ACCOUNTID integer primary key
 , ACCOUNTNAME TEXT COLLATE NOCASE NOT NULL UNIQUE
-, ACCOUNTTYPE TEXT NOT NULL /* Checking, Term, Investment, Credit Card */
+, ACCOUNTTYPE TEXT NOT NULL /* Cash, Checking, Term, Investment, Credit Card, Loan, Asset, Shares */
 , ACCOUNTNUM TEXT
 , STATUS TEXT NOT NULL /* Open, Closed */
 , NOTES TEXT
