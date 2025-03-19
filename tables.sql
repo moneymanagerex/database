@@ -162,6 +162,16 @@ INSERT INTO CATEGORY_V1 VALUES(54,'_tr_Investment Income',1,51);
 INSERT INTO CATEGORY_V1 VALUES(55,'_tr_Other Income',1,-1);
 INSERT INTO CATEGORY_V1 VALUES(56,'_tr_Other Expenses',1,-1);
 INSERT INTO CATEGORY_V1 VALUES(57,'_tr_Transfer',1,-1);
+INSERT INTO CATEGORY_V1 VALUES(58, '_tr_Investment', 1, -1);
+INSERT INTO CATEGORY_V1 VALUES(59, '_tr_Purchase', 1, 58);           -- Buying
+INSERT INTO CATEGORY_V1 VALUES(60, '_tr_Sale', 1, 58);               -- Selling
+INSERT INTO CATEGORY_V1 VALUES(61, '_tr_Dividend', 1, 58);           -- Dividend
+INSERT INTO CATEGORY_V1 VALUES(62, '_tr_Capital Gains', 1, 58);      -- Capital gains
+INSERT INTO CATEGORY_V1 VALUES(63, '_tr_Brokerage Fees', 1, 58);     -- Brokerage fees
+INSERT INTO CATEGORY_V1 VALUES(64, '_tr_Interest', 1, 58);           -- Investment interest
+INSERT INTO CATEGORY_V1 VALUES(65, '_tr_Taxes', 1, 58);              -- Investment taxes
+INSERT INTO CATEGORY_V1 VALUES(66, '_tr_Split', 1, 58);              -- Stock split
+INSERT INTO CATEGORY_V1 VALUES(67, '_tr_Merger', 1, 58);             -- Stock merger
 
 -- Describe CHECKINGACCOUNT_V1
 CREATE TABLE CHECKINGACCOUNT_V1(
