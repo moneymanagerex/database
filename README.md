@@ -5,6 +5,11 @@ database
 
 Available in [tables.sql](tables.sql) file.
 
+The [PocketBase schema](pocketbase/) shares the MMEX v21 table and field
+baseline. It includes the collection import and default data used by the
+WebApp; PocketBase IDs, rules, indexes and storage semantics are distinct
+from SQLite. See [PocketBase maintenance](pocketbase/README.md).
+
 ## UML (as of v19)
 
 **Click the image below for an interactive diagram**
