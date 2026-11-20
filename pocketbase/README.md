@@ -6,6 +6,13 @@ schema version 21. Its 25 business collections have the names and fields in
 are separate from the MMEX integer business keys. Matching field names does not
 imply identical constraints, indexes, data semantics or synchronization.
 
+Every collection additionally carries PocketBase's system `created` and
+`updated` autodate fields, which are not part of the SQLite schema. PocketBase
+stamps them on the server, so clients cannot forge them; they give the
+Dashboard and future incremental synchronization a reliable server-side change
+cursor. Only new or newly written records have values — records that predate
+these fields keep empty timestamps and are never back-filled.
+
 `defaults.json` contains the category and currency seed data used by the
 WebApp. These files are bundled into the WebApp for remote initialization; in
 the WebApp checkout run `sh scripts/sync-pocketbase-schema.sh` after changes,
@@ -18,6 +25,11 @@ Existing PocketBase v1 instances may be marked v21 by WebApp administrator setup
 after a collection and field-type check. This is a schema-baseline transition,
 not execution of SQLite's v20/v21 data repairs. Back up and stop other clients
 before the transition; older WebApp versions reject v21.
+
+Instances created from an earlier baseline that lacks `created`/`updated` are
+repaired in place by the same setup run: it adds only those two system fields
+to each collection, verifies the result, and leaves business data and the v21
+version marker untouched. The repair is idempotent.
 
 For each future MMEX schema version, review the corresponding SQLite changes
 and provide a PocketBase-specific, ordered migration wherever needed. Preserve
